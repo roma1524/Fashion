@@ -5,12 +5,12 @@
   &_wrap {
     display: flex;
     justify-content: space-between;
-    padding: 104px 0;
+    padding: 90px 0;
   }
 
   &_card {
     width: 360px;
-    height: 133px;
+    min-height: 133px;
     text-align: center;
     padding-left: 20px;
     padding-right: 20px;

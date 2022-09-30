@@ -19,7 +19,7 @@
   &_list {
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: repeat(2, minmax(581px, auto));
+    grid-template-rows: minmax(581px, auto);
     grid-auto-rows: minmax(581px, auto);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
@@ -146,4 +146,8 @@
 
 .product:hover .product_overlay {
   opacity: 1;
+}
+
+.mt_128 {
+  margin-top: 128px;
 }
