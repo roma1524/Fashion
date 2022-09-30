@@ -1,0 +1,143 @@
+
+.product_ca {
+    margin-top: -60px;
+    margin-bottom: 128px;
+    text-align: center;
+
+}
+
+.product_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+    width: 100%;
+    padding: 65px 0;
+    background-color: #FFFFFF;
+}
+
+.product_desc_h4 {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color_pink;
+}
+
+.hr_1 {
+    outline: none;
+    width: 63px;
+    height: 3px;
+    margin: 12px auto;
+    background-color: #EF5B70;
+    border: 1px solid #EF5B70;
+}
+
+.hr_2 {
+    max-width: 642px;
+    margin: 0 auto 65px auto;
+    opacity: 0.4;
+}
+
+.product_desc_h5 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    margin-bottom: 48px;
+}
+
+
+.product_desc_text {
+    display: inline-block;
+    max-width: 555px;
+    margin-bottom: 35px;
+}
+
+
+.product_desc_price {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    margin-bottom: 65px;
+}
+
+/* Choose filter ============================ */
+
+.choose_filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.choose_filter_1 {
+    text-align: left;
+    width: 120px;
+    left: 0;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 7px;
+}
+
+.choose_filter_2 {
+    text-align: left;
+    width: 100px;
+    left: 0;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 7px;
+}
+
+.choose_filter_3 {
+    text-align: left;
+    width: 40px;
+    left: 0;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 7px;
+}
+
+.choose_fa_chevron_down {
+    margin-right: 15px;
+}
+
+
+
+/* Button ======================================== */
+
+.product_desc_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.product_desc_button {
+    min-width: 20%;
+    padding: 15px 57px 15px 23px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #EF5B70;
+
+}
+
+.product_desc_button:hover {
+    color: white;
+    background-color: #EF5B70;
+    transition: .2s;
+}
+
+.product_basket_img {
+    margin-right: 23px;
+    fill: $color_pink;
+    padding-top: 2px;
+}
+
+.product_desc_button:hover .product_basket_img {
+    fill: #fff;
+}

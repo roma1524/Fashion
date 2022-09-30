@@ -1,0 +1,121 @@
+
+.registr {
+    margin-top: 64px;
+    margin-bottom: 96px;
+
+}
+
+.registr_wrap {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.registr_form {
+    width: 360px;
+
+    &_form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_h3 {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        margin-bottom: 20px;
+    }
+}
+
+.registr_input {
+    padding: 16px 18px 16px 18px;
+    margin-bottom: 20px;
+}
+
+.gender_radio {
+    margin-top: 11px;
+    margin-bottom: 33px;
+}
+
+.registr_f_fe {
+    margin-left: 20px;
+}
+
+.registr_f_ot {
+    margin-left: 20px;
+    display: none;
+}
+
+.registr_form_text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.registr_form_btn {
+    width: 170px;
+    margin-top: 39px;
+    padding: 17px 25px 17px 25px;
+    color: $color_pink;
+    background-color: #fff;
+    border: 1px solid $color_pink;
+
+    &:hover {
+        color: white;
+        background-color: $color_pink;
+        transition: .2s;
+    }
+}
+
+.registr_form_btn .fa-arrow-right {
+    margin-left: 18px;
+}
+
+
+.registr_desc {
+    display: flex;
+    flex-direction: column;
+    width: 652px;
+    opacity: 0.6;
+
+    &_header {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 22px;
+
+    }
+
+    &_text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        margin-bottom: 21px;
+    }
+
+    &_v {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+
+    }
+
+    &_span {
+        margin-bottom: 16px;
+    }
+}
+
+.span_padding {
+    padding-left: 0;
+}
+
+.fa-check {
+    margin-right: 23px;
+}

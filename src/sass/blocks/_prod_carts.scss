@@ -1,0 +1,133 @@
+
+.prod_carts {
+    background-color: #FFFFFF;
+    margin-top: 96px;
+
+    &_left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 652px;
+    }
+
+    &_left_top {
+        display: flex;
+        justify-content: space-between;
+        height: 306px;
+        margin-bottom: 40px;
+        background-color: #FFFFFF;
+        filter: $shadow_box;
+
+    }
+
+    &_left_top_img_1 {
+        width: 262px;
+        height: 306px;
+    }
+
+    &_left_top_desc {
+        width: 100%;
+        padding: 22px 22px 62px 31px;
+
+    }
+
+    &_left_h5 {
+        display: flex;
+        justify-content: space-between;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+        margin-bottom: 42px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    &_left_top_desc_text {
+        display: flex;
+        flex-direction: column;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+    }
+}
+
+.prod_carts_left_top_span {
+    margin-bottom: 6px;
+}
+
+.prod_carts_wrapper_btn {
+    position: absolute;
+    right: 17px;
+    top: 20px;
+    border: none;
+    font-size: 19px;
+    background-color: transparent;
+    transition: .2s;
+    padding: 15px;
+
+    &:hover {
+        cursor: pointer;
+        transform: rotate(90deg);
+        border: 1px solid $color_pink;
+        border-radius: 15px;
+        background-color: $color_pink;
+        color: #fff;
+    }
+
+}
+
+.prod_carts_wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.price_pink {
+    color: $color_pink;
+    margin-left: 10px;
+}
+
+.prod_carts_left_link {
+    @include flex;
+    margin-bottom: 128px;
+    margin-top: 32px;
+}
+
+.prod_carts_link {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #A4A4A4;
+    padding: 17px 41px 16px 39px;
+
+    &:hover {
+        color: white;
+        background-color: $color_pink;
+        animation-name: exit;
+        animation-duration: 2s;
+        transition-timing-function: ease;
+    }
+}
+
+.chose {
+    width: 50px;
+    padding: 2px 0 2px 5px;
+}
+
+@keyframes exit {
+    0% {
+        transform: translateX(0) rotateY(0deg) scale(1);
+    }
+
+    50% {
+        transform: translateX(35px) rotateY(-360deg) scale(1.5);
+    }
+
+    100% {
+        transform: translateX(0) rotateY(0) scale(1);
+    }
+}

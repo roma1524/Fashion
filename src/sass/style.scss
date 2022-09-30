@@ -1,0 +1,48 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+@import "base/variabless";
+@import "base/mixin";
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  gap: 1px;
+}
+
+.wrap {
+  max-width: $width;
+  margin: 0 auto;
+  outline: 1px solid blue;
+}
+
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/categories";
+@import "blocks/products";
+@import "blocks/prod_carts";
+@import "blocks/main_product";
+@import "blocks/product_ca";
+@import "blocks/benefits";
+@import "blocks/subscribe_review";
+@import "blocks/footer";
+@import "blocks/filter";
+@import "blocks/filter_wrap";
+@import "blocks/prod_carts_rigth";
+@import "blocks/pagination";
+@import "blocks/registr";
+@import "blocks/intro_catalog";

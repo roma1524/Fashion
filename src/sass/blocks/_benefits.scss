@@ -1,0 +1,35 @@
+
+.benefits {
+  background-color: #222224;
+
+  &_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 104px 0;
+  }
+
+  &_card {
+    width: 360px;
+    height: 133px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &_title {
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin: 25px 0 16px 0;
+  }
+
+  &_text {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+    opacity: 0.6;
+    text-align: center;
+  }
+}

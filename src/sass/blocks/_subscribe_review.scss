@@ -1,0 +1,95 @@
+
+.subscribe_review_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe_review {
+    background-image: url("../img/review_img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.review {
+    width: 360px;
+    height: 225px;
+    margin: 97px 0 112px 0;
+    text-align: center;
+}
+
+.review_text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    padding: 30px 0;
+}
+
+.subscribe_box {
+    padding-right: 50px;
+    text-align: center;
+}
+
+.subscribe_text_small {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe_text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    text-align: center;
+    color: #222224;
+    margin-bottom: 32px;
+}
+
+.subscribe_text_small {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+}
+
+.subscribe_form {
+    display: flex;
+}
+
+.subscribe_field {
+    padding: 15px 30px 15px 30px;
+    background-color: lightgrey;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    &:hover {
+        cursor: pointer;
+        transition: .2s;
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.subscribe_btn {
+    padding: 20px;
+    background-color: $color_pink;
+    opacity: 0.7;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+        color: white;
+        background-color: $color_pink;
+        transition: .2s;
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+}

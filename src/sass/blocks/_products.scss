@@ -1,0 +1,149 @@
+.products {
+  margin-top: 96px;
+
+  &_title {
+    font-weight: normal;
+    font-size: 30px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  &_description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+  }
+
+  &_list {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(2, minmax(581px, auto));
+    grid-auto-rows: minmax(581px, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-top: 48px;
+  }
+
+  .product {
+    background: #f8f8f8;
+    border-radius: 5px;
+
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__description {
+      padding: 20px 17px 18px 17px;
+    }
+
+    .product__title {
+      margin-bottom: 11px;
+
+      &__link {
+        text-decoration: none;
+        color: #000000;
+        font-weight: 500;
+        font-size: 13px;
+
+        &:hover {
+          text-decoration: none;
+          color: $color_pink;
+        }
+      }
+    }
+
+    .product__subtitle {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5D5D5D;
+      margin-bottom: 12px;
+    }
+
+    .product__price {
+      color: $color_pink;
+    }
+  }
+
+  &_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 190px;
+  }
+
+  &_link {
+    min-width: 212px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 16px;
+    color: $color_pink;
+    text-decoration: none;
+    border: 1px solid $color_pink;
+
+    &:hover {
+      background-color: $color_pink;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+
+.product_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 421px;
+  background-color: rgba(58, 56, 56, 0.83);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: 0.5s;
+
+  .button_to_cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    width: 139px;
+    height: 44px;
+
+    &_img {
+      fill: rgb(240, 216, 216);
+      margin-right: 11px;
+    }
+
+    &:hover {
+      text-decoration: none;
+      background-color: $color_pink;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: .2s;
+    }
+  }
+}
+
+.product:hover .product_overlay {
+  opacity: 1;
+}
