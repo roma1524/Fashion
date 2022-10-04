@@ -21,7 +21,7 @@ p {
 }
 
 .wrap {
-  max-width: $width;
+  width: 1140px;
   margin: 0 auto;
   outline: 1px solid blue;
 }
@@ -42,3 +42,4 @@ p {
 @import "blocks/pagination";
 @import "blocks/registr";
 @import "blocks/intro_catalog";
+@import "base/media";

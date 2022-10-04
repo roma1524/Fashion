@@ -5,8 +5,7 @@
     &_wrap {
         display: grid;
         grid-template-columns: repeat(3, 360px);
-        grid-template-rows: 260px;
-        grid-auto-rows: 180px;
+        grid-template-rows: 260px 180px;
         grid-column-gap: 30px;
         grid-row-gap: 20px;
     }
@@ -17,6 +16,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition: all .2s;
 
         &:hover {
             cursor: pointer;

@@ -1,0 +1,220 @@
+@media (max-width: 1200px) {
+  .wrap {
+    max-width: 960px;
+  }
+  .categories {
+    &_wrap {
+      grid-template-columns: repeat(3, 307px);
+      grid-template-rows: 220px 180px;
+      grid-column-gap: 20px;
+    }
+  }
+  .products {
+    &_list {
+      grid-template-columns: repeat(3, 306px);
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      margin-top: 72px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .wrap {
+    max-width: 720px;
+  }
+  .header {
+    &_wrap {
+      padding: 0 15px;
+    }
+  }
+  .intro {
+    &_wrap {
+      height: 368px;
+      background-size: contain;
+      background-position: -20px bottom;
+    }
+
+    &_title {
+      width: 320px;
+      margin-right: 0;
+      margin-bottom: 0;
+      border-left: 11px solid $color_pink;
+
+      &_big {
+        font-size: 44px;
+        line-height: 1;
+      }
+
+      &_small {
+        font-size: 24px;
+      }
+    }
+  }
+  .categories {
+    margin-top: 20px;
+
+    &_wrap {
+      grid-template-columns: repeat(3, 232px);
+      grid-template-rows: 167px 116px;
+      grid-column-gap: 12px;
+      grid-row-gap: 12px;
+    }
+  }
+  .products {
+    &_list {
+      grid-template-columns: repeat(2, 355px);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+    }
+
+    &_btn {
+      height: 110px;
+    }
+  }
+  .benefits {
+    .benefits_wrap {
+      padding: 48px 0 64px 0;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+  .subscribe_review {
+    &_wrap {
+      flex-direction: column;
+      gap: 45px;
+      padding: 64px 0 140px 0;
+
+      .subscribe_box {
+        padding-right: 0;
+
+        .subscribe_form {
+          .subscribe_field, .subscribe_btn {
+            height: 49px;
+          }
+
+          .subscribe_btn {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    &_box {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap {
+    max-width: 540px;
+  }
+  .header {
+    &_wrap {
+      &-right {
+        .account_link, .basket_link {
+          display: none;
+        }
+      }
+    }
+  }
+  .intro {
+    &_wrap {
+      height: 363px;
+      background-image: none;
+      justify-content: center;
+    }
+
+    &_title {
+      margin-left: 75px;
+
+      &_big {
+        font-size: 38px;
+      }
+
+      &_small {
+        font-size: 20px;
+      }
+    }
+  }
+  .categories {
+    margin-top: 40px;
+
+    &_wrap {
+      grid-template-columns: repeat(3, 172px);
+    }
+  }
+  .products {
+    &_list {
+      grid-template-columns: 365px;
+      grid-column-gap: 0;
+      grid-row-gap: 15px;
+      justify-content: center;
+    }
+
+    &_btn {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .categories {
+    margin-top: 64px;
+
+    &_wrap {
+      grid-template-columns: 343px;
+      grid-template-rows: repeat(3, 247px);
+      grid-auto-rows: 111px;
+      grid-row-gap: 30px;
+      justify-content: center;
+    }
+
+    &_item_women, &_item_men, &_item_kids, &_item_acces {
+      grid-column: 1 / 2;
+    }
+
+    &_item_women {
+      grid-row: 1 / 2;
+    }
+
+    &_item_men {
+      grid-row: 2 / 3;
+    }
+
+    &_item_kids {
+      grid-row: 3 / 4;
+    }
+
+    &_item_acces {
+      grid-row: 4 / 5;
+    }
+  }
+  .products {
+    margin-top: 64px;
+
+    &_list {
+      grid-template-columns: 345px;
+    }
+  }
+
+  .subscribe_review {
+    &_wrap {
+      padding: 64px 0 140px 0;
+    }
+  }
+  .footer {
+    &_box {
+      padding-top: 40px;
+      gap: 40px;
+      flex-direction: column-reverse;
+    }
+  }
+}
