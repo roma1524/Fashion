@@ -1,5 +1,7 @@
 .products {
   margin-top: 96px;
+  position: relative;
+  z-index: 1;
 
   &_title {
     font-weight: normal;
@@ -73,6 +75,10 @@
 
     .product__price {
       color: $color_pink;
+    }
+
+    .invis_product {
+      display: block;
     }
   }
 

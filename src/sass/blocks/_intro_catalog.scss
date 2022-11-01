@@ -1,69 +1,70 @@
 
 .intro_catalog {
-    background-color: #F8F3F4;
-}
+  background-color: #F8F3F4;
 
-.intro_catalog_wrap {
+
+  &_wrap {
     display: flex;
     justify-content: space-between;
 
-}
+  }
 
-.catalog_header_h1 {
+  .catalog_header_h1 {
     font-size: 24px;
     line-height: 29px;
     color: $color_pink;
     padding: 60px 0;
+    margin-bottom: 0;
+  }
 
-}
-
-.intro_catalog_breadcrumbs {
+  &_breadcrumbs {
     text-decoration: none;
-}
 
-.intro_catalog_breadcrumbs_list {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    list-style: none;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-    text-decoration: none;
-}
-
-.breadcrumbs_new {
-    margin: 0 5px 0 0;
-    text-decoration: none;
-}
-
-.breadcrumbs_home::after {
-    content: '/';
-    margin: 0 5px;
-}
-
-
-.breadcrumbs_men::after {
-    content: '/';
-    margin: 0 5px;
-}
-
-.breadcrumbs_new_1 {
-    color: $color_pink;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.breadcrumbs_link {
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #636363;
-
-    &:hover {
-        color: $color_pink;
+    &_list {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      list-style: none;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #636363;
+      text-decoration: none;
     }
+
+    .breadcrumbs_new {
+      margin: 0 5px 0 0;
+      text-decoration: none;
+    }
+
+    .breadcrumbs_home::after {
+      content: '/';
+      margin: 0 5px;
+    }
+
+
+    .breadcrumbs_men::after {
+      content: '/';
+      margin: 0 5px;
+    }
+
+    .breadcrumbs_new_1 {
+      color: $color_pink;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .breadcrumbs_link {
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #636363;
+
+      &:hover {
+        color: $color_pink;
+      }
+    }
+  }
 }

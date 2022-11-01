@@ -17,6 +17,19 @@
       margin-top: 72px;
     }
   }
+  .filter {
+    height: 38px;
+  }
+  .prod_carts {
+    &_left {
+      width: 552px;
+    }
+  }
+  .registr {
+    &_wrap {
+      gap: 22px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -61,16 +74,22 @@
       grid-row-gap: 12px;
     }
   }
+
   .products {
     &_list {
       grid-template-columns: repeat(2, 355px);
       grid-column-gap: 10px;
       grid-row-gap: 10px;
+
+      .invis_product {
+        display: none;
+      }
     }
 
     &_btn {
       height: 110px;
     }
+
   }
   .benefits {
     .benefits_wrap {
@@ -104,6 +123,59 @@
   .footer {
     &_box {
       padding: 0 15px;
+    }
+  }
+  .prod_carts {
+
+    &_wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_left {
+      width: 652px;
+
+      &_link {
+        margin-bottom: 64px;
+      }
+    }
+
+    &_right {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 128px;
+
+      &_bottom {
+        margin-top: 55px;
+      }
+    }
+  }
+  .registr {
+    &_form {
+      width: 52%;
+    }
+
+    &_desc {
+      width: 50%;
+
+      &_header {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 32px;
+      }
+
+      &_text {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      &_v {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 5px;
+      }
     }
   }
 }
@@ -147,16 +219,68 @@
       grid-template-columns: repeat(3, 172px);
     }
   }
+
   .products {
+    margin-top: 50px;
+
+    .filter {
+      &_menu {
+        display: none;
+      }
+    }
+
     &_list {
       grid-template-columns: 365px;
       grid-column-gap: 0;
       grid-row-gap: 15px;
       justify-content: center;
+
+      .invis_product {
+        display: block;
+      }
     }
 
     &_btn {
       margin-bottom: 50px;
+    }
+  }
+  .main_product {
+    &_wrap {
+      height: 624px;
+    }
+  }
+  .product_ca {
+    margin-top: 0;
+
+    .product_desc {
+      .hr_2 {
+        min-width: 80%;
+      }
+
+    }
+  }
+  .prod_carts {
+    &_wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_left {
+      width: 100%;
+
+      &_link {
+        margin-bottom: 48px;
+      }
+    }
+
+    &_right {
+      flex-direction: column;
+      margin-bottom: 96px;
+
+      &_bottom {
+        margin-top: 48px;
+      }
     }
   }
 }
@@ -166,6 +290,31 @@
     max-width: 100%;
     padding: 0 15px;
   }
+  .intro_catalog {
+    &_wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .catalog_header_h1 {
+      padding: 24px 0;
+    }
+
+    .intro_catalog_breadcrumbs {
+      margin-bottom: 30px;
+    }
+
+  }
+  .product_ca {
+    .choose_filter {
+      .filter_thr_sum {
+        font-size: 10px;
+      }
+    }
+  }
+
   .categories {
     margin-top: 64px;
 
@@ -215,6 +364,76 @@
       padding-top: 40px;
       gap: 40px;
       flex-direction: column-reverse;
+    }
+  }
+
+  .prod_carts {
+    &_left {
+      width: 358px;
+
+      &_link {
+        margin-top: 0;
+
+        .prod_carts_link {
+          font-size: 12px;
+          padding: 9px 18px 9px 18px;
+        }
+      }
+
+      &_top {
+        height: 188px;
+        margin-bottom: 32px;
+
+        &_span {
+          margin-bottom: 0;
+        }
+
+        &_desc {
+          padding: 13px 13px 13px 17px;
+        }
+
+        &_desc_text {
+          font-size: 14px;
+          line-height: 17px;
+        }
+
+        &_img_1 {
+          width: 143px;
+          height: 188px;
+        }
+      }
+
+      &_h5 {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+
+    &_right {
+      gap: 80px;
+
+      &_form {
+        margin-bottom: 0;
+      }
+
+      &_bottom {
+        margin-top: 0;
+      }
+    }
+  }
+  .registr {
+    &_wrap {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_form {
+      width: 90%;
+      margin-bottom: 40px;
+    }
+
+    &_desc {
+      width: 90%;
     }
   }
 }
